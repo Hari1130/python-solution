@@ -1,0 +1,6 @@
+class SingleNumber:
+    def singleNumber(self, nums):
+        sing = nums[0]
+        for i in range(1, len(nums)):
+            sing = sing ^ nums[i]
+        return sing
